@@ -8,14 +8,19 @@ body {
 
   .carousel-indicators {
     position: relative;
+    list-style: none;
     margin-top: 35px;
   }
   
-  .carousel-indicators>li {
+  .carousel-indicators > li {
     border-radius: 50%;
     height: 25px !important;
     width: 25px !important;
     background-color: black !important;
+  }
+
+  .ricomida-text {
+    font-family: 'Lobster', cursive;
   }
   
   .fit {
@@ -23,9 +28,6 @@ body {
     height: 240px;
   }
   
-  .ricomida-text {
-    font-family: 'Lobster', cursive;
-  }
   
   hr {
     position: relative;
