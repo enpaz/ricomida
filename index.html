@@ -12,8 +12,140 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
     <!-- Nuestro CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- NAVIGATION -->
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand fs-3">Ricomida</a>
+            <button class="navbar-toggler" data-bs-target="#mynav" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-end my-1" id="mynav">
+                <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <a href="#" class="nav-link">Inicio</a>
+                    <a href="#recetas" class="nav-link">Recetas</a>
+                    <a href="#nosotros" class="nav-link">Nosotros</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 </head>
 <body>
+    <main>
+        <section id="hero" class="py-4">
+            <div class="container text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                <img src="assets/img/principal.jpg" alt="pizza" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2 class="display-5 fw-bold">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h2>
+                    <div style="height: 2px; background-color:#000; margin: 15px 0"></div>
+                    <h4 class="fw-bolder">110 MIN / 6 A 8 PORCIONES</h4>
+                    <div class="mt-5 d-flex justify-content-center justify-content-md-start">
+                        <a id="boton-correo" class="btn btn-outline-dark me-4" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Presiona para enviar a tu correo">Enviar por correo</a>
+                        <a class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Agrega esta receta a tus favoritos">Añadir a favoritos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+     <!-- 1 requerimiento: CARRUSEL -->
+     <section class="container d-none d-lg-block my-3" id="nosotros">
+        <div class="carousel slide" id="my-carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col">
+                  <img src="./assets/img/slider-1.png" alt="comida 01" class="w-100 fit">
+                </div>
+                <div class="col">
+                  <img src="./assets/img/slider-2.png" alt="comida 02" class="w-100 fit">
+                </div>
+                <div class="col">
+                  <img src="./assets/img/slider-3.png" alt="comida 03" class="w-100 fit">
+                </div>
+                <div class="col">
+                  <img src="./assets/img/slider-4.png" alt="comida 04" class="w-100 fit">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img src="./assets/img/slider-5.png" alt="comida 05" class="w-100 fit">
+                </div>
+                <div class="col">
+                  <img src="./assets/img/slider-6.png" alt="comida pic" class="w-100 fit">
+                </div>
+                <div class="col">
+                  <img src="./assets/img/slider-7.png" alt="comida pic" class="w-100 fit">
+                </div>
+                <div class="col">
+                  <img src="./assets/img/slider-8.png" alt="comida pic" class="w-100 fit">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-bs-target="#my-carousel" data-bs-slide-to="0" class="active indicador" aria-current="true" aria-label="Slide 1"></li>
+          <li class="indicador" data-bs-target="#my-carousel" data-bs-slide-to="1" aria-label="Slide 2"></li>
+        </ol>
+        <hr class="container">
+      </section>
+      <div class="container">
+        <div class="row">
+          <div class="mx-auto mx-lg-0 col-11 col-lg-6">
+            <h4 class="underline my-4 h2">INGREDIENTES</h4>
+            <ul class="list-unstyled fs-4">
+              <li class="mb-4">Masa</li>
+              <li>20 gr de levadura seca instantánea</li>
+              <li>1 cucharadita de azúcar</li>
+              <li>500 ml agua tibia</li>
+              <li>100 ml aceite vegetal</li>
+              <li>4 cucharadas de aceite de olivia</li>
+              <li>65 gr harina de maíz fina (chuchoca)</li>
+              <li>2 cucharaditas de sal</li>
+              <li>625 gr harina</li>
+              <li class="mb-4">Salsa</li>
+              <li>5 cucharadas de aceite de oliva</li>
+              <li>&#189; cebolla picada en cubos finos</li>
+              <li>2 cucharaditas de sal</li>
+              <li>3 cucharadas de Orégano Gourmet</li>
+              <li>1 &#189; cucharadas de Albahaca Gourmet</li>
+              <li>2 tarro de tomates en cubos al natural</li>
+              <li>2 cucharaditas de azúcar</li>
+              <li>Relleno</li>
+            </ul>
+          </div>
+          <div class="mx-auto mx-lg-0 col-11 col-lg-5">
+            <h4 class="underline my-4 mb-5 h2">PREPARACIÓN</h4>
+            <ol class="fs-4 list-unstyled">
+              <li class="my-4">1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos.
+                Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la
+                cantidad necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y
+                elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol
+                aceitado, tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la
+                masa para que baje y luego dejar leudar por 40 minutos adicionales.</li>
+              <li class="my-4">2. Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal
+                y cocinar hasta que la cebolla esté dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al
+                jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como
+                30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</li>
+              <li>
+                3. Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya
+                evaporado todo el líquido que hayan votado los vegetales. Reservar.</li>
+              <li class="my-4">4. Calentar el horno a 220C.</li>
+              <li class="my-4">5. Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde
+                de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con el queso mozarella, luego terminar con la salsa de
+                tomates y finalmente espolvorear el queso rallado. 6. Hornear por 35 a 40 minutos o hasta que el relleno esté
+                caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
     <!-- JQuery 3.6 minificado CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Boostrap JS CDN -->
